@@ -1,0 +1,61 @@
+
+
+body {
+    background-color: #D45151;
+    color: white;
+}
+
+#pseudo-div {
+    width: 100%;
+    background-color: red;
+}
+
+.navbar {
+    background-color: #D45151 !important;
+    color: white;
+}
+
+#purple-div {
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    // background: linear-gradient(97deg, #1E1446 50%, rgba(255, 255, 255, 0) 50.15%);
+    display: grid;
+    place-content: center left;
+    
+    h1, h3 {
+        margin-left: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+        
+    }
+    h1 {
+        // font-size: 2em;
+    }
+}
+
+#face {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 300px;
+    background: url('/img/vectorFace.png') no-repeat;
+    background-color: #D45151;
+    z-index: -2;
+    background-blend-mode: darken;
+    background-size: 40vh;
+    background-position: center bottom;
+}
+
+
+
+/* //TODO
+1. Darkmode, ställa in särskilda färger IFALL man är i darkmode? UX baby.
+
+*/
