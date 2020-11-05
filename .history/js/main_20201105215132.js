@@ -66,6 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //     .to(header, {y: -100})
     // .to(header, {opacity: 0})
     
+    
+ tl2.addLabel("start")
+    .to("#projects-page", {test()})
+
+        function test() {
+            console.log('hej')
+        }
+
 
 
 

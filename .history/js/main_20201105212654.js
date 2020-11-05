@@ -27,27 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-    let custom = gsap.timeline({
-        // yes, we can add it to an entire timeline!
-        scrollTrigger: {
-            // trigger: header,
-            // pin: true,   // pin the trigger element while active
-            start: "bottom bottom", // when the top of the trigger hits the top of the viewport
-            end: "+=100", // end after scrolling 500px beyond the start
-            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-            // snap: {
-            //     snapTo: "labels", // snap to the closest label in the timeline
-            //     duration: {min: 0.2, max: 1}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-            //     delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-            //     // ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
-            //     overwrite: 'auto'
-            // }
-            onToggle: self => console.log('hej')
-        }
-    });
-
-
     // ScrollTrigger.create({
     //     start: 'bottom 200',
     //     end: 99999,
@@ -61,11 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // tl.addLabel("start")
     
-    // tl2.addLabel("start")
-    //     .to("#projects-page", {y: -100})
-    //     .to(header, {y: -100})
-    // .to(header, {opacity: 0})
+    tl2.addLabel("start")
+        .to("#projects-page", {y: -100})
+        .to(header, {y: -100})
+        // .to(header, {opacity: 0})
     
+
+
+
 
 
 
