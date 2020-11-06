@@ -138,39 +138,20 @@ body {
 }
 
 #page-1-nav {
+    // background-color: red;
     position: absolute;
-    top: 1px;
-    right: 31.1px;
-    height: 20px;
-    width: 24px;
+    
+    top: 12px;
+    right: 25px;
+     height: 25px;
+     width: 25px;
+    // background: url('/img/hamburger-menu-1.png');
     background-position: top right;
     
     opacity: 1 !important;
     z-index: 3 !important;
 }
 
-#page-2-nav {
-    position: absolute;
-    top: 17px;
-    right: 31.1px;
-    height: 20px;
-    width: 24px;
-    background-position: top right;
-    
-    opacity: 1 !important;
-    z-index: 3 !important;
-}
-#page-3-nav {
-    position: absolute;
-    top: 33px;
-    right: 31.1px;
-    height: 20px;
-    width: 24px;
-    background-position: top right;
-    
-    opacity: 1 !important;
-    z-index: 3 !important;
-}
 .project {
     display: flex;
     flex-direction: column;
