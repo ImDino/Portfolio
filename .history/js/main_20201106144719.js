@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     TweenLite.from('#face', {y:20, ease:Linear.easeNone});
     
     
-    setTimeout(function(){ gsap.to('.mouse', {duration: 1, opacity: 1}); }, 1000);
+    setTimeout(function(){ gsap.from('.mouse', {duration: 1, opacity: 0}); }, 2000);
     setTimeout(function(){ gsap.to('.mouse', {duration: 1, opacity: 0}); }, 2000);
     
 
