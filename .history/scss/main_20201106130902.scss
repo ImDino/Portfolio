@@ -134,7 +134,6 @@ body {
 
 .navbar-toggler-icon {
     position: relative;
-    z-index: -1 !important;
 }
 
 #page-1-nav {
@@ -145,10 +144,7 @@ body {
     right: 25px;
     height: 30px;
     width: 30px;
-    background: url('/img/hamburger-menu-1.png');
-    background-position: center center;
-    opacity: 1 !important;
-    z-index: 1 !important;
+    background-image: url('/img/hamburger-menu-1.png');
 }
 
 .project {

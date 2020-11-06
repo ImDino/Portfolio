@@ -132,24 +132,6 @@ body {
     
 }
 
-.navbar-toggler-icon {
-    position: relative;
-    z-index: -1 !important;
-}
-
-#page-1-nav {
-    // background-color: red;
-    position: absolute;
-    
-    top: 12px;
-    right: 25px;
-    height: 30px;
-    width: 30px;
-    background: url('/img/hamburger-menu-1.png');
-    background-position: center center;
-    opacity: 1 !important;
-    z-index: 1 !important;
-}
 
 .project {
     display: flex;

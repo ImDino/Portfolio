@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTrigger: {
             // trigger: header,
             // pin: true,   // pin the trigger element while active
-            start: "100  middle", // when the top of the trigger hits the top of the viewport
-            end: "+=20", // end after scrolling 500px beyond the start
+            start: "50 middle", // when the top of the trigger hits the top of the viewport
+            end: "+=100", // end after scrolling 500px beyond the start
             scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
             // snap: {
             //     snapTo: "labels", // snap to the closest label in the timeline
