@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     let header = document.getElementsByClassName('header')[0];
-    // console.log(header)
+    console.log(header)
     let tl2 = gsap.timeline({
         // yes, we can add it to an entire timeline!
         scrollTrigger: {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //     // ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
             //     overwrite: 'auto'
             // }
-            // onToggle: self => console.log('hej')
+            onToggle: self => console.log('hej')
         }
     });
     
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTrigger: {
             // trigger: header,
             // pin: true,   // pin the trigger element while active
-            start: "top middle", // when the top of the trigger hits the top of the viewport
+            start: "bottom bottom", // when the top of the trigger hits the top of the viewport
             end: "+=100", // end after scrolling 500px beyond the start
             scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
             // snap: {
@@ -62,12 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
             //     // ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
             //     overwrite: 'auto'
             // }
-            // onToggle: self => console.log('language')
+            // onToggle: self => console.log('hej')
         }
     });
 
-    language.addLabel('language').to('#language', {opacity:0})
-    language.addLabel('language').to('#language', {x:-100})
+    language.to('#language', {opacity:0})
 
     // tl.addLabel("start")
     // .from("#projects-page", {scale: 0.3, autoAlpha: 0})
@@ -82,21 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // .to(header, {opacity: 0})
     
 
-    // let nav_button = document.getElementById('nav-button');
-    // let navbar = document.getElementById('navbar');
-    // console.log(nav_button)
-    // console.log(navbar)
 
-    // nav_button.addEventListener('click', ()=> {
-    //     if (!navbar.hasAttribute('toggled')) {
-    //         navbar.setAttribute('toggled' ,'')
-    //         navbar.classList.add('navbar-toggled')
-    //     } else {
-    //         console.log('hej')
-    //         navbar.removeAttribute('toggled')
-    //         navbar.classList.remove('navbar-toggled')
-    //     }
-    // })
+
+
+
 
 
         gsap.registerPlugin(ScrollTrigger);
@@ -201,17 +189,17 @@ document.addEventListener('DOMContentLoaded', () => {
     ::: Refresh Counter :::
     :::::::::::::::::::::*/
 
-    // if(localStorage.getItem('refreshCount') == null) {
-    //     localStorage.setItem('refreshCount', 1);
-    // } else {
-    //     let  localRefreshCount = localStorage.getItem('refreshCount')
-    //     localRefreshCount++;
-    //     localStorage.setItem('refreshCount', localRefreshCount);
-    // }
-    // if (parseInt(localStorage.getItem('refreshCount')) > 10) {
-    //     localStorage.setItem('refreshCount', 1);
-    // }
-    // console.log('RefreshCount: '+localStorage.getItem('refreshCount'))
+    if(localStorage.getItem('refreshCount') == null) {
+        localStorage.setItem('refreshCount', 1);
+    } else {
+        let  localRefreshCount = localStorage.getItem('refreshCount')
+        localRefreshCount++;
+        localStorage.setItem('refreshCount', localRefreshCount);
+    }
+    if (parseInt(localStorage.getItem('refreshCount')) > 10) {
+        localStorage.setItem('refreshCount', 1);
+    }
+    console.log('RefreshCount: '+localStorage.getItem('refreshCount'))
 
     
     /*::::::::END::::::::::

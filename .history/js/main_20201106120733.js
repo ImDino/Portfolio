@@ -82,21 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // .to(header, {opacity: 0})
     
 
-    // let nav_button = document.getElementById('nav-button');
-    // let navbar = document.getElementById('navbar');
-    // console.log(nav_button)
-    // console.log(navbar)
+    let nav_button = document.getElementById('nav-button');
+    let navbar = document.getElementById('navbar');
+    console.log(nav_button)
+    console.log(navbar)
 
-    // nav_button.addEventListener('click', ()=> {
-    //     if (!navbar.hasAttribute('toggled')) {
-    //         navbar.setAttribute('toggled' ,'')
-    //         navbar.classList.add('navbar-toggled')
-    //     } else {
-    //         console.log('hej')
-    //         navbar.removeAttribute('toggled')
-    //         navbar.classList.remove('navbar-toggled')
-    //     }
-    // })
+
 
 
         gsap.registerPlugin(ScrollTrigger);

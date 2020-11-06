@@ -20,6 +20,9 @@ body {
     height: 100%;
 }
 
+#language {
+    color: white;
+}
 
 .navbar {
     background-color: #24b8dd00 !important;
@@ -46,19 +49,8 @@ body {
 }
 
 .nav-item {
-    background-color: #1a4550;
-    line-height: 2.5em;
-    text-align: center;
+    background-color: #24b8dd;
 }
-
-#navbarNav {
-    margin-top: 2vh;
-}
-
-.navbar-toggled {
-    background-color: #24b8dd !important;
-}
-
 #home-page {
     padding-top: 170px;
     position: absolute;
