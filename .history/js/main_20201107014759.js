@@ -137,21 +137,4 @@ document.addEventListener('DOMContentLoaded', () => {
         (function () {
           initPage(page1);
         })();
-
-
-
-
-
-        let body = document.getElementsByTagName('body')[0];
-        let nav_button = document.getElementById('nav-button')
-        
-        
-        body.addEventListener('click' , (e)=> {
-            if (!nav_button.classList.contains('collapsed')) {
-                console.log('hej')
-                e.preventDefault()
-                nav_button.click();
-            }
-        })
-
 })

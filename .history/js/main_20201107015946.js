@@ -146,12 +146,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let nav_button = document.getElementById('nav-button')
         
         
-        body.addEventListener('click' , (e)=> {
+        body.addEventListener('click' ,myFunction)
+
+        function myFunction() {
             if (!nav_button.classList.contains('collapsed')) {
                 console.log('hej')
-                e.preventDefault()
-                nav_button.click();
             }
-        })
+            // document.getElementById("nav-button").click(); // Click on the checkbox
+        }
+
+
 
 })

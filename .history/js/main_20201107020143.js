@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault()
                 nav_button.click();
             }
+            
         })
 
 })

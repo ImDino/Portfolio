@@ -1,10 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollToPlugin);
-
-
     gsap.from("#home-text", {duration: 1, x: -1000});
     gsap.from("#face", {duration: 1, opacity: 0});
     gsap.from("#face", {clearProps: 'all', duration: 1, x:100});
@@ -91,7 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
     language.addLabel('language').to('#language', {opacity:0})
     language.addLabel('language').to('#language', {x:-100})
 
-
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollToPlugin);
 
         const button = document.querySelector(".toggle-page");
         const page1 = document.querySelector(".page1");
@@ -137,21 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
         (function () {
           initPage(page1);
         })();
-
-
-
-
-
-        let body = document.getElementsByTagName('body')[0];
-        let nav_button = document.getElementById('nav-button')
-        
-        
-        body.addEventListener('click' , (e)=> {
-            if (!nav_button.classList.contains('collapsed')) {
-                console.log('hej')
-                e.preventDefault()
-                nav_button.click();
-            }
-        })
-
 })

@@ -142,16 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        let body = document.getElementsByTagName('body')[0];
-        let nav_button = document.getElementById('nav-button')
-        
-        
-        body.addEventListener('click' , (e)=> {
-            if (!nav_button.classList.contains('collapsed')) {
+
+        document.getElementsByTagName('body')[0].addEventListener('click' ,myFunction)
+
+        function myFunction() {
+            if (document.getElementsByName('body').hasClass('toggled')) {
                 console.log('hej')
-                e.preventDefault()
-                nav_button.click();
             }
-        })
+            // document.getElementById("nav-button").click(); // Click on the checkbox
+        }
+
+
 
 })

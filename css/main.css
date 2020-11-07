@@ -115,7 +115,8 @@ body {
   right: 31.1px;
   height: 20px;
   width: 24px;
-  background-position: top right; }
+  background-position: top right;
+  opacity: 0; }
 
 #page-2-nav {
   position: absolute;
@@ -123,7 +124,8 @@ body {
   right: 31.1px;
   height: 20px;
   width: 24px;
-  background-position: top right; }
+  background-position: top right;
+  opacity: 0; }
 
 #page-3-nav {
   position: absolute;
@@ -131,7 +133,8 @@ body {
   right: 31.1px;
   height: 20px;
   width: 24px;
-  background-position: top right; }
+  background-position: top right;
+  opacity: 0; }
 
 .project {
   display: flex;
