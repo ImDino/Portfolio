@@ -6,6 +6,8 @@
 
 html, body {
     height: 100%;
+    // width: 100%;
+    // overflow-x: hidden;
 }
 
 body {
@@ -140,6 +142,7 @@ a {
     left: 0;
     right: 0;
     overflow: hidden;
+    // margin-bottom: 28vh;
     margin-bottom: 12vh;
     background: url('/img/vectorFace4.png') no-repeat;
     background-color: #24b8dd;
@@ -234,6 +237,8 @@ a {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+    
+
 }
 
 .image-wrap {
@@ -338,5 +343,5 @@ a {
 }
 
 /* //TODO
-1. Testa darkmode
+1. Testa darkmdoe
 */
