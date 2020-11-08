@@ -274,6 +274,10 @@ a {
     margin-top: 5px;
     opacity: 0; } }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; } }
+
 /* //TODO
 1. Testa darkmode
 */

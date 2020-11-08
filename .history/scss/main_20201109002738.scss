@@ -1,28 +1,3 @@
-
-
-
-
-@mixin zeroSides {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-@mixin font-small {
-    
-}
-
-@mixin font-large {
-    
-}
-
-$main-color: #24b8dd;
-$secondary-color: #FFF;
-
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +9,7 @@ html, body {
 }
 
 body {
-    background-color: #24b8dd !important;
+    background-color: #1e9bbb !important;
     color: white;
 }
 
