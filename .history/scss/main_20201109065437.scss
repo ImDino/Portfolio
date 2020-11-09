@@ -10,7 +10,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: $secondary-color;
     overflow-x: hidden;
-    margin:0 auto;
 }
 
 * {
@@ -33,7 +32,7 @@ a {
 
 #home-page {
     height: 100%;
-    width: 100%;
+    // width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -45,13 +44,13 @@ a {
         top: 0;
         bottom: 0;
         left: 0;
-        right: 100px; //Varför funkar det inte på 0????
+        right: 0;
         overflow: hidden;
         margin-bottom: 24vh;
         background: url('/img/vectorFace4.png') no-repeat;
         background-color: $main-color;
         z-index: -2;
-        
+        margin-left: -25px;
         background-blend-mode: difference;
         background-size: 35vh;
         background-position: center bottom;
@@ -165,7 +164,7 @@ a {
     opacity: 0;
     position: absolute;
     bottom: 5%;
-    right: 48%;
+    right: 50%;
     display: flex;
     justify-content: center;
 }
