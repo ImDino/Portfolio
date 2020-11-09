@@ -51,6 +51,21 @@ a {
     height: 100%;
     margin-bottom: -60px;
 }
+#home-page {
+    padding-top: 170px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: 18vh;
+    background-size: 200%;
+    background-blend-mode: luminosity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #face {
