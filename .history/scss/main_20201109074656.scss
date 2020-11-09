@@ -40,7 +40,6 @@ a {
 #home-page {
     height: 100%;
     width: 100%;
-    overflow: hidden;
 
     @include flexCol();
     align-content: center;
@@ -52,6 +51,7 @@ a {
         bottom: 0;
         left: 0;
         right: 100px; //Varför funkar det inte på 0????
+        overflow: hidden;
         margin-bottom: 24vh;
         background: url('/img/vectorFace4.png') no-repeat;
         background-color: $main-color;

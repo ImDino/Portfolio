@@ -1,11 +1,6 @@
 $main-color: #24b8dd;
 $secondary-color: #FFF;
 
-@mixin flexCol {
-    display: flex;
-    flex-direction: column;
-}
-
 html , body {
     height: 100%;
     margin: 0;
@@ -40,9 +35,9 @@ a {
 #home-page {
     height: 100%;
     width: 100%;
-    overflow: hidden;
 
-    @include flexCol();
+    display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
 
@@ -52,6 +47,7 @@ a {
         bottom: 0;
         left: 0;
         right: 100px; //Varför funkar det inte på 0????
+        overflow: hidden;
         margin-bottom: 24vh;
         background: url('/img/vectorFace4.png') no-repeat;
         background-color: $main-color;
@@ -75,7 +71,8 @@ a {
     grid-gap: 10vh;
 
     .project {
-        @include flexCol();
+        display: flex;
+        flex-direction: column;
         align-items: center;
         width: 100%;
     }
@@ -89,7 +86,8 @@ a {
 }
 
 #about-text {
-    @include flexCol();
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
     p {
@@ -107,7 +105,7 @@ a {
     color: white;
     position: fixed;
     top: 0;
-    width: 100%;
+    // width: 100%;
     z-index: +1;
 }
 
