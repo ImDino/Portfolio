@@ -90,9 +90,9 @@ a {
     width: 100%;
     height: 100%;
 }
-
-#home-text {
-    min-width: 100%;
+#face-banner {
+    background-color: black;
+    width: 100% !important;
 }
 
 #projects {
@@ -193,8 +193,8 @@ a {
 
 .mouse{
     opacity: 0;
-    position: fixed;
-    bottom: 15%;
+    position: absolute;
+    bottom: 5%;
     right: 48%;
     display: flex;
     justify-content: center;

@@ -6,11 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.from("#home-text", {duration: 1, x: -1000});
     gsap.from("#face", {duration: 1, opacity: 0});
     gsap.from("#face", {clearProps: 'all', duration: 1, x:100});
-    gsap.from("#face", {clearProps: 'all', duration: 1, scale:0.5});
-    gsap.to("#face", {clearProps: 'all', duration: 1, scale:1,
-    onComplete:function(){
-        document.getElementById('home-page').classList.add('overflowHidden');
-    }}); 
     TweenLite.from('#face', {y:20, ease:Linear.easeNone});
     
     setTimeout(function(){ gsap.to('.mouse', {duration: 1, opacity: 1}); }, 1000);

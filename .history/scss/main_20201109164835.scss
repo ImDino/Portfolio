@@ -94,6 +94,14 @@ a {
 #home-text {
     min-width: 100%;
 }
+#face-banner {
+    background-color: black;
+    
+    display: grid;
+    // justify-items: center;
+    transform: position(100% 0%);
+    display: block;
+}
 
 #projects {
     display: grid;
@@ -193,8 +201,8 @@ a {
 
 .mouse{
     opacity: 0;
-    position: fixed;
-    bottom: 15%;
+    position: absolute;
+    bottom: 5%;
     right: 48%;
     display: flex;
     justify-content: center;

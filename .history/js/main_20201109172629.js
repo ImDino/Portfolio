@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollToPlugin);
 
     gsap.from("#home-text", {duration: 1, x: -1000});
-    gsap.from("#face", {duration: 1, opacity: 0});
+    gsap.from("#face", {duration: 2, opacity: 0});
     gsap.from("#face", {clearProps: 'all', duration: 1, x:100});
-    gsap.from("#face", {clearProps: 'all', duration: 1, scale:0.5});
+    gsap.to("#face", {clearProps: 'all', duration: 1, scale:10});
     gsap.to("#face", {clearProps: 'all', duration: 1, scale:1,
     onComplete:function(){
         document.getElementById('home-page').classList.add('overflowHidden');

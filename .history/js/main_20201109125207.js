@@ -6,11 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.from("#home-text", {duration: 1, x: -1000});
     gsap.from("#face", {duration: 1, opacity: 0});
     gsap.from("#face", {clearProps: 'all', duration: 1, x:100});
-    gsap.from("#face", {clearProps: 'all', duration: 1, scale:0.5});
-    gsap.to("#face", {clearProps: 'all', duration: 1, scale:1,
-    onComplete:function(){
-        document.getElementById('home-page').classList.add('overflowHidden');
-    }}); 
     TweenLite.from('#face', {y:20, ease:Linear.easeNone});
     
     setTimeout(function(){ gsap.to('.mouse', {duration: 1, opacity: 1}); }, 1000);
@@ -22,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let projectsHeader = gsap.timeline({
         scrollTrigger: {
             trigger: '#projects-header',
-            start: 'top 80%',
+            start: 'center center',
             clearProps: 'all',
             duration: 1.5
         }
@@ -33,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let apiHeader = gsap.timeline({
         scrollTrigger: {
             trigger: '#api-header',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -44,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let apiPicture = gsap.timeline({
         scrollTrigger: {
             trigger: '#api-picture',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -55,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let apiText = gsap.timeline({
         scrollTrigger: {
             trigger: '.api-text',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -66,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let moreSoon = gsap.timeline({
         scrollTrigger: {
             trigger: '#more-coming-soon',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -77,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let aboutHeader = gsap.timeline({
         scrollTrigger: {
             trigger: '#about-header',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -88,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let aboutText = gsap.timeline({
         scrollTrigger: {
             trigger: '#about-text',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -99,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let contactHeader = gsap.timeline({
         scrollTrigger: {
             trigger: '#contact-header',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }
@@ -110,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let contactText = gsap.timeline({
         scrollTrigger: {
             trigger: '#contact-text',
-            start: 'top 80%',
             clearProps: 'all',
             duration: 1.5
         }

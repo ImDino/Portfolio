@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let about = document.getElementById('about-page')
     let contact = document.getElementById('contact-page')
     
+    
     let projectsHeader = gsap.timeline({
         scrollTrigger: {
             trigger: '#projects-header',
