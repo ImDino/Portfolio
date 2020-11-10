@@ -192,6 +192,9 @@ a {
             border-radius: 24px !important;
             background-color: none;
             
+            display: flex;
+            justify-self: right !important;
+
             a {
                 color: white;
                 text-decoration: none;

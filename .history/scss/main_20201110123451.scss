@@ -171,31 +171,32 @@ a {
 }
 
 .navbar-toggler {
+    float: right !important;
     border: none;
 }
 
 // .navbar-toggler:focus {
-    //     outline: none; // "inga" har outline på focus på hamburger-ikonen. Kommenterat ut bara för att fylla tillgänglighetskravet.
-    // }
+//     outline: none; // "inga" har outline på focus på hamburger-ikonen. Kommenterat ut bara för att fylla tillgänglighetskravet.
+// }
+
+.nav-item {
+    background-color: #006786;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#navbarNav {
+    margin-top: 2vh;
+    border-radius: 24px !important;
     
-    .nav-item {
-        background-color: #006786;
-        line-height: 2.5em;
-        text-align: center;
-    }
-    
-    #navbarNav {
-        margin-top: 2vh;
+    ul {
         border-radius: 24px !important;
-        
-        ul {
-            border-radius: 24px !important;
-            background-color: none;
-            
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.2em;
+        background-color: none;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
         }
         li:first-child {
             border-radius: 24px 24px 0 0 !important;

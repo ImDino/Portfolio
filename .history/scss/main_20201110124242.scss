@@ -191,7 +191,13 @@ a {
         ul {
             border-radius: 24px !important;
             background-color: none;
+            width: 100%;
             
+            li {
+                display: flex !important;
+                justify-items: right !important;
+                float: right;
+            }
             a {
                 color: white;
                 text-decoration: none;

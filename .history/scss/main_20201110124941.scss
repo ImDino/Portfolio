@@ -170,6 +170,10 @@ a {
     z-index: +1;
 }
 
+#navbar {
+    float: right;
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -187,7 +191,7 @@ a {
     #navbarNav {
         margin-top: 2vh;
         border-radius: 24px !important;
-        
+
         ul {
             border-radius: 24px !important;
             background-color: none;

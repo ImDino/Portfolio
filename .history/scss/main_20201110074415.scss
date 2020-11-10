@@ -30,8 +30,7 @@ a {
 
 .header {
     text-decoration: underline;
-    margin-bottom: 6vh;
-    margin-top: 6vh;
+    margin-bottom: 4vh;
 }
 
 
@@ -96,34 +95,20 @@ a {
     min-width: 100%;
 }
 
-#projects-page {
-    padding-bottom: 6vh;
-}
-
 #projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    grid-gap: 0vh;
-    padding-bottom: 8vh;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-gap: 10vh;
 
     .project {
         @include flexCol();
         align-items: center;
         width: 100%;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-
-        a {
-            margin-top: 2vh;
-        }
     }
     .project , img {
         width: 90%;
-        max-width: 600px;
+        max-width: 700px;
     }
     * {
         display: block;
@@ -131,6 +116,10 @@ a {
 
     .project-text {
         margin-top: 2vh;
+    }
+
+    #more-coming-soon {
+        margin: 10vh 0vh;
     }
 }
 
@@ -141,19 +130,6 @@ a {
     p {
         width: 90%;
         max-width: 800px;
-    }
-}
-
-#contact-page {
-    margin-bottom: 8vh;
-}
-
-#contact-text {
-    @include flexCol();
-    align-items: center;
-
-    a {
-        margin-bottom: 2vh;
     }
 }
 
@@ -175,27 +151,27 @@ a {
 }
 
 // .navbar-toggler:focus {
-    //     outline: none; // "inga" har outline på focus på hamburger-ikonen. Kommenterat ut bara för att fylla tillgänglighetskravet.
-    // }
+//     outline: none; // "inga" har outline på focus på hamburger-ikonen. Kommenterat ut bara för att fylla tillgänglighetskravet.
+// }
+
+.nav-item {
+    background-color: #006786;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#navbarNav {
+    margin-top: 2vh;
+    border-radius: 24px !important;
     
-    .nav-item {
-        background-color: #006786;
-        line-height: 2.5em;
-        text-align: center;
-    }
-    
-    #navbarNav {
-        margin-top: 2vh;
+    ul {
         border-radius: 24px !important;
-        
-        ul {
-            border-radius: 24px !important;
-            background-color: none;
-            
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.2em;
+        background-color: none;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
         }
         li:first-child {
             border-radius: 24px 24px 0 0 !important;
@@ -221,7 +197,6 @@ a {
     height: 60px;
     background-size: 60px;
     display: block;
-    margin-top: 1vh;
 }
 
 .mouse{
@@ -293,7 +268,7 @@ a {
 }
 
 
-@media (max-width: 993px){
+@media (max-width: 1000px){
     #projects {
         grid-template-columns: 1fr;
     }

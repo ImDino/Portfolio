@@ -170,6 +170,9 @@ a {
     z-index: +1;
 }
 
+#navbar {
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -189,6 +192,8 @@ a {
         border-radius: 24px !important;
         
         ul {
+            display: flex !important;
+            justify-items: space-between !important;
             border-radius: 24px !important;
             background-color: none;
             

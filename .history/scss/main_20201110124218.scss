@@ -189,9 +189,15 @@ a {
         border-radius: 24px !important;
         
         ul {
+            
             border-radius: 24px !important;
             background-color: none;
-            
+            background-color: palevioletred;
+            width: 100%;
+            float: right !important;
+
+            li {
+            }
             a {
                 color: white;
                 text-decoration: none;
