@@ -1,0 +1,3 @@
+Riktlinje nr: 141 Ange sidans språk i koden
+//jag har "sv" i lang i html filen.
+
