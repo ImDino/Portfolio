@@ -106,7 +106,7 @@ a {
     justify-items: center;
     grid-gap: 0vh;
     padding-bottom: 8vh;
-    max-width: 1400px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 
@@ -302,12 +302,10 @@ a {
 @media (min-width: 993px){
     .nav-item {
         background-color: transparent;
-        margin-right: 3vh;
     }
     #home-text {
         h1 {
-            font-size: 4em;
-            margin-top: 10vh;
+            font-size: 3.5em;
         }
         h3 {
             font-size: 2.5em;            

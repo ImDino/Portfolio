@@ -106,7 +106,7 @@ a {
     justify-items: center;
     grid-gap: 0vh;
     padding-bottom: 8vh;
-    max-width: 1400px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 
@@ -179,7 +179,7 @@ a {
     // }
     
 .nav-item {
-    background-color: #006786;
+    // background-color: #006786;
     line-height: 2.5em;
     text-align: center;
 }
@@ -297,20 +297,8 @@ a {
     #projects {
         grid-template-columns: 1fr;
     }
-}
-
-@media (min-width: 993px){
+    
     .nav-item {
-        background-color: transparent;
-        margin-right: 3vh;
-    }
-    #home-text {
-        h1 {
-            font-size: 4em;
-            margin-top: 10vh;
-        }
-        h3 {
-            font-size: 2.5em;            
-        }
+        background-color: red !important;
     }
 }
