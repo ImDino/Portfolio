@@ -1,27 +1,15 @@
-::::::::::::::::::::::
-:: valda riktlinjer ::
-::::::::::::::::::::::
+
+::::::::::::::::::::::::
+:: 5 valda riktlinjer ::
+::::::::::::::::::::::::
 
 Riktlinje nr: 141 Ange sidans språk i koden
 //jag har "sv" i lang i html filen.
 
-Riktlinje nr: 115 Beskriv med text allt innehåll som inte är text
-//mina bild-element har alt-text.
 
-Riktlinje nr: 122 Presentera innehållet i en meningsfull ordning för alla
-//HTML dokumentet såväl som sidan i sig är simpel och väl strukturerad.
 
-Riktlinje nr: 124 Använd inte enbart färg för att förmedla information
-//ganska självförklarat
 
-Riktlinje nr: 91 Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
-//min sida fungerar väl i alla möjliga skärmförhållanden.
 
-Riktlinje nr: 127 Se till att text går att förstora utan problem
-//även om du zoomar 500 % på datorn så ser du alla bilder och all text.
-
-Riktlinje nr: 133 Orsaka inte epileptiska anfall genom blinkande
-//jag har själv epilepsi, så jag tog detta i hänsyn när jag testade olika animeringar.
 
 
 :::::::::::::::
@@ -65,6 +53,4 @@ typsnitt, och andra eventuella design-mallar som de utgår ifrån när de skapar
 ::  tillgänglighet  ::
 ::::::::::::::::::::::
 
-Digital tillgänglighet är till för att ingen ska hindras från att ta del av digitala tjänster pga funktionsnedsättning.
 
-Dagens standard kallas WCAG, Web Content Accessibility Guidelines.

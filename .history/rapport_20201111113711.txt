@@ -1,6 +1,7 @@
-::::::::::::::::::::::
-:: valda riktlinjer ::
-::::::::::::::::::::::
+
+::::::::::::::::::::::::
+:: 5 valda riktlinjer ::
+::::::::::::::::::::::::
 
 Riktlinje nr: 141 Ange sidans språk i koden
 //jag har "sv" i lang i html filen.
@@ -18,10 +19,8 @@ Riktlinje nr: 91 Skapa en flexibel layout som fungerar vid förstoring eller lit
 //min sida fungerar väl i alla möjliga skärmförhållanden.
 
 Riktlinje nr: 127 Se till att text går att förstora utan problem
-//även om du zoomar 500 % på datorn så ser du alla bilder och all text.
+//även om du zoomar 500 % på datorn så ser du alla bilder och all text felfritt.
 
-Riktlinje nr: 133 Orsaka inte epileptiska anfall genom blinkande
-//jag har själv epilepsi, så jag tog detta i hänsyn när jag testade olika animeringar.
 
 
 :::::::::::::::

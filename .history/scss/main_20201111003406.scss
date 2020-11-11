@@ -1,4 +1,5 @@
-$main-color: #24b8dd;
+// $main-color: #24b8dd;
+$main-color: #0a494b;
 $secondary-color: #FFF;
 
 @mixin flexCol {
@@ -78,7 +79,7 @@ a {
     // background-color: $main-color;
     z-index: -2;
     
-    background-blend-mode: difference;
+    // background-blend-mode: difference;
     background-size: 29vh;
     background-position: center bottom;
     // -webkit-transform: rotate(-10deg);

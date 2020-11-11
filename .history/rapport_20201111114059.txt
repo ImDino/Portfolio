@@ -1,6 +1,7 @@
-::::::::::::::::::::::
-:: valda riktlinjer ::
-::::::::::::::::::::::
+
+::::::::::::::::::::::::
+:: 5 valda riktlinjer ::
+::::::::::::::::::::::::
 
 Riktlinje nr: 141 Ange sidans språk i koden
 //jag har "sv" i lang i html filen.
@@ -22,6 +23,8 @@ Riktlinje nr: 127 Se till att text går att förstora utan problem
 
 Riktlinje nr: 133 Orsaka inte epileptiska anfall genom blinkande
 //jag har själv epilepsi, så jag tog detta i hänsyn när jag testade olika animeringar.
+
+
 
 
 :::::::::::::::

@@ -1,0 +1,34 @@
+5 valda riktlinjer_
+
+Riktlinje nr: 141 Ange sidans språk i koden
+//jag har "sv" i lang i html filen.
+
+
+beskriver Scrum, grafisk profil och tillgänglighet
+
+Scrum 
+
+Ett srum team består av en scrum master, en produktägare, samt utvecklar team(s). 
+
+Produktägaren ser över kundens (samt slutkunders) behov och förser teamet med en s k product backlog som i stort sätt är en lista
+av funktioner och sorterar dessa enligt prioritering.
+
+som generellt sätt består av en samling av scenarion hos slutkunden som ska avhjälpas med funktionalitet i produkten.
+
+En utsedd scrum master ser till att alla i gruppen har verktygen som behövs och ser över projektets flöde.
+
+//sprintar ska helst vara lika långa för att bli bättre på att planera sprintarna med tiden och att undvika utbrändhet.
+
+teamet ser först över product backlog:en för att bestämma vilka funktionaliteter som ska finnas i release backlogen.
+
+sen ser man över hur lång tid varje del i backlogen kommer ta samt bryter ner dom i mindre delmål vid behov.
+
+sen dela upp release backlogen i sprintar med genomförbara mål, varje sprint ska resultera i en produktionsklar del av produkten.
+// varje sprint ska resultera i en fungerande produkt
+
+Scrum master användner sig dels av en s k burndown chart, överblicka hur mycket man har fått gjort över tid (dag för dag) på en graf
+för att bla a se om man i nuvarande tempo kommer hinna göra klart innan deadline.
+
+daily scrum är dagliga korta möten där man berättar vad man fått gjort och planerar att göra nästkommande dag samt tar upp eventuella
+hinder för att få hjälp med de.Dessa möten håller man korta och därför brukar man ta dessa ståendes.
+
