@@ -1,7 +1,7 @@
 $main-color: #24b8dd;
 $secondary-color: #FFF;
 
-@mixin flexCol-Al-cen() {
+@mixin flexCol {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +80,6 @@ a {
     background-position: center bottom;
 }
 
-//pseudo-div is there to push all elements down from the landing-page
 #pseudo-div {
     width: 100%;
     height: 100%;
@@ -105,7 +104,7 @@ a {
     margin-right: auto;
 
     .project {
-        @include flexCol-Al-cen();
+        @include flexCol();
         width: 100%;
         margin-top: 5vh;
         margin-bottom: 5vh;
@@ -128,7 +127,7 @@ a {
 }
 
 #about-text {
-    @include flexCol-Al-cen();
+    @include flexCol();
 
     p {
         width: 90%;
@@ -141,7 +140,7 @@ a {
 }
 
 #contact-text {
-    @include flexCol-Al-cen();
+    @include flexCol();
 
     a {
         margin-bottom: 2vh;
@@ -177,10 +176,10 @@ a {
     
 #navbarNav {
     margin-top: 2vh;
-    border-radius: 24px;
+    border-radius: 24px !important;
     
     ul {
-        border-radius: 24px;
+        border-radius: 24px !important;
         background-color: none;
         
         a {
@@ -189,16 +188,16 @@ a {
             font-size: 1.2em;
         }
         li:first-child {
-            border-radius: 24px 24px 0 0;
+            border-radius: 24px 24px 0 0 !important;
         }
         li:last-child {
-            border-radius: 0px 0px 24px 24px;
+            border-radius: 0px 0px 24px 24px !important;
         }           
     }
 }
 
 .navbar-toggled {
-    background-color: $main-color;
+    background-color: $main-color !important;
 }
 
 
@@ -214,12 +213,6 @@ a {
     display: block;
     margin-top: 1vh;
 }
-
-
-
-/*:::::::::::::::::::::::::::::
-::   SCROLL ICON ANIMATION   ::
-:::::::::::::::::::::::::::::*/
 
 .mouse{
     opacity: 0;
@@ -290,18 +283,12 @@ a {
 }
 
 
-/*:::::::::::::::::::::
-::   MEDIA QUERIES   ::
-:::::::::::::::::::::*/
-
-
-// i chose 993px because that's where bootstrap shows/hides the hamburger menu
 @media (max-width: 993px){
     #projects {
         grid-template-columns: 1fr;
     }
 }
-// i chose 993px because that's where bootstrap shows/hides the hamburger menu
+
 @media (min-width: 993px){
     .nav-item {
         background-color: transparent;

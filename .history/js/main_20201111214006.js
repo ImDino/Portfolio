@@ -63,39 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     apiText.addLabel('header').from('.api-text', {opacity:0 , y:50})
     
-    let yatzyHeader = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#yatzy-header',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyHeader.addLabel('header').from('#yatzy-header', {opacity:0 , y:50})
-    
-    let yatzyPicture = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#yatzy-picture',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyPicture.addLabel('header').from('#yatzy-picture', {opacity:0 , y:50})
-    
-    let yatzyText = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.yatzy-text',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyText.addLabel('header').from('.yatzy-text', {opacity:0 , y:50})
-    
     let moreSoon = gsap.timeline({
         scrollTrigger: {
             trigger: '#more-coming-soon',

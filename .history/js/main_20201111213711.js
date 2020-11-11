@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.from("#face", {duration: 1, opacity: 0});
     gsap.from("#face", {clearProps: 'all', duration: 1, x:100});
     gsap.from("#face", {clearProps: 'all', duration: 1, scale:0.5});
-    gsap.to("#face", {clearProps: 'all', duration: 1, scale:1,
+    gsap.to("#face", {clearProps: 'all', duration: 1, scale:1});
     onComplete:function(){
         document.getElementById('home-page').classList.add('overflowHidden');
     }}); 
@@ -62,39 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     apiText.addLabel('header').from('.api-text', {opacity:0 , y:50})
-    
-    let yatzyHeader = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#yatzy-header',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyHeader.addLabel('header').from('#yatzy-header', {opacity:0 , y:50})
-    
-    let yatzyPicture = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#yatzy-picture',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyPicture.addLabel('header').from('#yatzy-picture', {opacity:0 , y:50})
-    
-    let yatzyText = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.yatzy-text',
-            start: 'top 80%',
-            clearProps: 'all',
-            duration: 1.5
-        }
-    });
-
-    yatzyText.addLabel('header').from('.yatzy-text', {opacity:0 , y:50})
     
     let moreSoon = gsap.timeline({
         scrollTrigger: {
