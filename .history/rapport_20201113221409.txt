@@ -53,12 +53,8 @@ När en sprint är över så ska ska produktägaren testa allt som gjorts klart 
 följer en lista av kriterier som avgör ifall en produkt är klar eller inte, dvs definition of done.
 
 
-För-/nackdelar:
-I mindre grupper och om samtliga är dedikerade så som vi var i min grupp så verkar scrum vara
-ett bra alternativ. Jag kan tänka mig att det blir svårt i större grupper, då ökar förstås
-sannolikheten att någon i gruppen inte är dedikerad men framför allt för att ju större grupp
-destå svårare blir det för alla, det blir svårare att vara scrum master, daily scrum mötena blir 
-längre, det skulle bli för mycket politik då iom att allas röster ska vara hörda. 
+fördel: struktur, färre fallgropar
+nackdel: svårt för större team 
 
 
 :::::::::::::::::::::
@@ -69,9 +65,9 @@ Grafisk profil är som en sorts design-policy för företag och organisationer. 
 typsnitt, och andra eventuella design-mallar som de utgår ifrån när de skapar en sida.
 
 
-För-/nackdelar: det är viktigt att en sida är enhetlig och att man information presenteras på ett sätt
-som inte är förvirrande, så jag kan absolut förespråka grafsk profil, men då får man också räkna med
-begränsningar i hur man kan designa.
+fördel: enhetlig sida
+nackdel: begränsningar i design
+
 
 ::::::::::::::::::::::
 ::  tillgänglighet  ::
@@ -81,8 +77,6 @@ Digital tillgänglighet är till för att ingen ska hindras från att ta del av 
 
 Dagens standard kallas WCAG, Web Content Accessibility Guidelines.
 
-För-/nackdelar: att förse möjligheten för funktionsnedsatta att ta del av informationen på sidan
-är såklart en bra sak i sig, inte bara som medmänniska utan även ur ett affärsperspektiv. Man får
-ökad chans att hittas på sökmotorer och man utvidgar kundbasen (ifall man erbjuder en tjänst/produkt).
-Nackdelen är att det krävs mer jobb, inte bara när man skapar sidan första gången utan varje gång
-man gör förändringar.
+
+fördel: tillgänglighet, potentiell ökning av antal besökare
+nackdel: mera jobb
