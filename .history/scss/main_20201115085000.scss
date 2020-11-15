@@ -155,7 +155,7 @@ a {
 :::::::::::::::::::*/
 
 .navbar {
-    background-color: transparent !important;
+    // background-color: transparent !important;
     color: white;
     position: fixed;
     top: 0;
@@ -167,12 +167,10 @@ a {
     border: none;
 }
 
-/*  // most pages (even nackademin themselves) have no focus outline on the hamburger icon for aesthetic reasons
-.navbar-toggler:focus {
-    outline: none;
-}
-*/
-
+// .navbar-toggler:focus {
+    //     outline: none; // få sidor idag har outline på focus på hamburger-ikonen, det är fult, men det finns såklart andra lösningar.
+    // }
+    
 .nav-item {
     background-color: #006786;
     line-height: 2.5em;
