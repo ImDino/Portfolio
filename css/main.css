@@ -116,7 +116,7 @@ a {
 ::      Navbar     ::
 :::::::::::::::::::*/
 .navbar {
-  background-color: #24b8dd !important;
+  background-color: transparent !important;
   color: white;
   position: fixed;
   top: 0;
@@ -246,6 +246,8 @@ a {
     background-color: transparent;
     margin-right: 3vh;
     margin-top: -2vh; }
+  #navbar {
+    background-color: #24b8dd !important; }
   #home-text h1 {
     font-size: 4em;
     margin-top: 10vh; }

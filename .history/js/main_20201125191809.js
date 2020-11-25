@@ -163,40 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     contactHeader.addLabel('header').from('#contact-text', {opacity:0 , y:50})
-    
-    const navbar = document.getElementById('navbar');
+
     const homeBtn = document.getElementById('home-btn')  
     const projectsBtn = document.getElementById('projects-btn')  
     const aboutBtn = document.getElementById('about-btn')  
     const contactBtn = document.getElementById('contact-btn')
-    
-    gsap.to(".navbar", {
-        scrollTrigger: {    
-            onUpdate: self => {
-                if (self.direction == 1 && $(window).width() > 993) {
-                    navbar.classList.remove('scrolled-up');
-                    navbar.classList.add('scrolled-down');
-                } else if ($(window).width() > 993){
-                    navbar.classList.remove('scrolled-down');
-                    navbar.classList.add('scrolled-up');
-                }
-            }
-        }
-    });
-
-    
-    if ($(window).width() > 990){
-        gsap.to(".navbar", {
-            scrollTrigger: {
-                trigger: '#navbar',
-                start: 'top 0%',
-                toggleActions: "play none reverse none",
-                duration: 0
-            },
-        
-        boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
-        });
-    }
     
     homeBtn.addEventListener('click', () => {
         gsap.to(window, {duration: 1, scrollTo:"#home-page"});
@@ -211,8 +182,40 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(window, {duration: 1, scrollTo:"#contact-page"});
     })
 
+    const navbar = document.getElementById('navbar');
+    gsap.to(".navbar", {
+        scrollTrigger: {
+            
+        onUpdate: self => {
+            if (self.direction == 1 && $(window).width() > 993) {
+                navbar.classList.remove('scrolled-up');
+                navbar.classList.add('scrolled-down');
+                
+                console.log($(window).width())
+                // console.log("down")
+            } else if ($(window).width() > 993){
+                navbar.classList.remove('scrolled-down');
+                navbar.classList.add('scrolled-up');
+                // console.log("up")
+            }
+        }
+      }
+    });
 
-
+    gsap.to(".navbar", {
+        scrollTrigger: {
+            trigger: '#navbar',
+            start: 'top 0%',
+            toggleActions: "play none reverse none",
+            duration: 0
+      },
+      onUpdate: self => {
+        if ($(window).width() > 990){
+            return
+        }
+    },
+    boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
+});
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu
     let body = document.getElementsByTagName('body')[0];
