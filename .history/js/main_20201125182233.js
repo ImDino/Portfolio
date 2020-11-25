@@ -182,32 +182,38 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(window, {duration: 1, scrollTo:"#contact-page"});
     })
 
-    const navbar = document.getElementById('navbar');
-    gsap.to(".navbar", {
-        scrollTrigger: {
-            
-        onUpdate: self => {
-            if (self.direction == 1) {
-                navbar.classList.remove('scrolled-up');
-                navbar.classList.add('scrolled-down');
-                console.log("down")
-            } else {
-                navbar.classList.remove('scrolled-down');
-                navbar.classList.add('scrolled-up');
-                console.log("up")
-            }
-        }
-      }
-    });
-    gsap.to(".navbar", {
-        scrollTrigger: {
-            trigger: '#navbar',
-            start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
-      },
-      boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
-    });
+
+    var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop,
+  isVisible = true;
+
+function show(){
+  if(!isVisible){
+    TweenLite.to(".header", 1, { y: "0%" }, 0);
+    isVisible = true;
+  }
+}
+
+function hide(){
+  if(isVisible){
+    TweenLite.to(".header", 1, { y: "-100%" }, 0);
+    isVisible = false;
+  }
+}
+
+function refresh() {
+  var newScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (newScrollTop > currentScrollTop) {
+    hide();
+  } else if (newScrollTop < currentScrollTop) {
+    show();
+  }
+  currentScrollTop = newScrollTop;
+}
+
+window.addEventListener("scroll", refresh, {
+  passive: true
+});
+refresh();
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu
     let body = document.getElementsByTagName('body')[0];

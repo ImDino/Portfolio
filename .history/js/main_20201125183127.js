@@ -185,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     gsap.to(".navbar", {
         scrollTrigger: {
-            
         onUpdate: self => {
             if (self.direction == 1) {
                 navbar.classList.remove('scrolled-up');
@@ -194,19 +193,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 navbar.classList.remove('scrolled-down');
                 navbar.classList.add('scrolled-up');
+                gsap.from(".navbar", {clearProps: 'all', duration: 1, x:100});
                 console.log("up")
             }
         }
-      }
-    });
-    gsap.to(".navbar", {
-        scrollTrigger: {
-            trigger: '#navbar',
-            start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
       },
-      boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
+    //   backgroundColor: "white",
+    // //   duration: 0.1,
+    //   boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
     });
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu

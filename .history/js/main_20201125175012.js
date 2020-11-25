@@ -182,31 +182,26 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(window, {duration: 1, scrollTo:"#contact-page"});
     })
 
-    const navbar = document.getElementById('navbar');
-    gsap.to(".navbar", {
+    let navbar = gsap.timeline({
         scrollTrigger: {
-            
-        onUpdate: self => {
-            if (self.direction == 1) {
-                navbar.classList.remove('scrolled-up');
-                navbar.classList.add('scrolled-down');
-                console.log("down")
-            } else {
-                navbar.classList.remove('scrolled-down');
-                navbar.classList.add('scrolled-up');
-                console.log("up")
-            }
+            clearProps: 'all',
+            duration: 1.5,
+            revert: true
         }
-      }
     });
     gsap.to(".navbar", {
         scrollTrigger: {
-            trigger: '#navbar',
-            start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
+        onUpdate: self => {
+            if (self.direction == 1) {
+                navbar.addLabel('header').to('#navbar', {y:50})
+            } else {
+                navbar.addLabel('header').to('#navbar', {y:50})
+            }
+        }
       },
-      boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
+    //   backgroundColor: "white",
+    // //   duration: 0.1,
+    //   boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
     });
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu

@@ -203,8 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTrigger: {
             trigger: '#navbar',
             start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
+            toggleActions: "play none reverse none"
       },
       boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
     });

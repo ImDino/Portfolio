@@ -155,7 +155,7 @@ a {
 :::::::::::::::::::*/
 
 .navbar {
-    background-color: $main-color !important;
+    background-color: transparent !important;
     color: white;
     position: fixed;
     top: 0;
@@ -205,13 +205,7 @@ a {
     background-color: $main-color;
 }
 
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
- }
- .scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
- }
- 
+
 /*:::::::::::::::::::
 ::      Other      ::
 :::::::::::::::::::*/
@@ -316,9 +310,7 @@ a {
     .nav-item {
         background-color: transparent;
         margin-right: 3vh;
-        margin-top: -2vh;
     }
-
     #home-text {
         h1 {
             font-size: 4em;

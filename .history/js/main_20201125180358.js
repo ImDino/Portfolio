@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     contactHeader.addLabel('header').from('#contact-text', {opacity:0 , y:50})
 
+    const navbar = document.getElementById('navbar')  
     const homeBtn = document.getElementById('home-btn')  
     const projectsBtn = document.getElementById('projects-btn')  
     const aboutBtn = document.getElementById('about-btn')  
@@ -182,31 +183,21 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(window, {duration: 1, scrollTo:"#contact-page"});
     })
 
-    const navbar = document.getElementById('navbar');
     gsap.to(".navbar", {
         scrollTrigger: {
-            
         onUpdate: self => {
             if (self.direction == 1) {
-                navbar.classList.remove('scrolled-up');
-                navbar.classList.add('scrolled-down');
+                navbar.classList.add('slide-up')
                 console.log("down")
             } else {
-                navbar.classList.remove('scrolled-down');
-                navbar.classList.add('scrolled-up');
+
                 console.log("up")
             }
         }
-      }
-    });
-    gsap.to(".navbar", {
-        scrollTrigger: {
-            trigger: '#navbar',
-            start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
       },
-      boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
+    //   backgroundColor: "white",
+    // //   duration: 0.1,
+    //   boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
     });
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu

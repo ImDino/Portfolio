@@ -155,7 +155,7 @@ a {
 :::::::::::::::::::*/
 
 .navbar {
-    background-color: $main-color !important;
+    background-color: transparent !important;
     color: white;
     position: fixed;
     top: 0;
@@ -316,9 +316,7 @@ a {
     .nav-item {
         background-color: transparent;
         margin-right: 3vh;
-        margin-top: -2vh;
     }
-
     #home-text {
         h1 {
             font-size: 4em;

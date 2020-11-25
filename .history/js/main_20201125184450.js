@@ -185,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     gsap.to(".navbar", {
         scrollTrigger: {
+            start: 'top 80%',
             
         onUpdate: self => {
             if (self.direction == 1) {
@@ -197,14 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("up")
             }
         }
-      }
-    });
-    gsap.to(".navbar", {
-        scrollTrigger: {
-            trigger: '#navbar',
-            start: 'top 0%',
-            toggleActions: "play none reverse none",
-            duration: 0
       },
       boxShadow:"0px 6px 25px -7px rgba(0,0,0,0.32)"
     });

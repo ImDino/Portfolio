@@ -116,7 +116,7 @@ a {
 ::      Navbar     ::
 :::::::::::::::::::*/
 .navbar {
-  background-color: transparent !important;
+  background-color: #24b8dd !important;
   color: white;
   position: fixed;
   top: 0;
@@ -153,6 +153,14 @@ a {
 
 .navbar-toggled {
   background-color: #24b8dd; }
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out; }
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out; }
 
 /*:::::::::::::::::::
 ::      Other      ::
@@ -236,7 +244,8 @@ a {
 @media (min-width: 993px) {
   .nav-item {
     background-color: transparent;
-    margin-right: 3vh; }
+    margin-right: 3vh;
+    margin-top: -2vh; }
   #home-text h1 {
     font-size: 4em;
     margin-top: 10vh; }
