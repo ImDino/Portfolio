@@ -126,11 +126,9 @@ a {
 .navbar-toggler {
   border: none; }
 
-/*  // most pages (even nackademin themselves) have no focus outline on the hamburger icon for aesthetic reasons
 .navbar-toggler:focus {
-    outline: none;
-}
-*/
+  outline: none; }
+
 .nav-item {
   background-color: #006786;
   line-height: 2.5em;
