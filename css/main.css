@@ -103,7 +103,7 @@ a {
     max-width: 800px; }
 
 #contact-page {
-  margin-bottom: 8vh; }
+  padding-bottom: 8vh; }
 
 #contact-text {
   display: flex;
