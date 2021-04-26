@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    /*
-    While heavily studying animations I discovered GSAP, it has better performance than other methods of animating and
-    has taken browser compatibility into count, I felt it was the best way to go. However, I did include native CSS
-    animations in this project due to homework requirements.
-    */
-
-    //registering the two plugins used is just to be safe, read more at https://greensock.com/docs/v3/GSAP/gsap.registerPlugin()
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
 
@@ -199,20 +191,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     homeBtn.addEventListener('click', () => {
-        gsap.to(window, {duration: 1, scrollTo:"#home-page"});
+        gsap.to(window, {scrollTo:"#home-page"});
     })
     projectsBtn.addEventListener('click', () => {
-        gsap.to(window, {duration: 1, scrollTo:"#projects-page"});
+        gsap.to(window, {scrollTo:"#projects-page"});
     })
     aboutBtn.addEventListener('click', () => {
-        gsap.to(window, {duration: 1, scrollTo:"#about-page"});
+        gsap.to(window, {scrollTo:"#about-page"});
     })
     contactBtn.addEventListener('click', () => {
-        gsap.to(window, {duration: 1, scrollTo:"#contact-page"});
+        gsap.to(window, {scrollTo:"#contact-page"});
     })
-
-
-
 
     // when nav-bar is toggled open (mobile), clicking outside will cancel default action and close the menu
     let body = document.getElementsByTagName('body')[0];

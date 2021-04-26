@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -70,7 +74,7 @@ a {
   margin-bottom: 15vh;
   background: url("../img/vectorFace5.png") no-repeat;
   z-index: -2;
-  background-blend-mode: difference;
+  /* background-blend-mode: difference; */
   background-size: 29vh;
   background-position: center bottom;
 }
